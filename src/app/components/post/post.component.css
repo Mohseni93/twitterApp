@@ -1,0 +1,66 @@
+.item-post{
+    display: flex;
+    padding: 10px;
+}
+.item-post .profile-post{
+    width: 10%;
+}
+.item-post .main-content-post{
+    border: 1px solid #d2d2d2;
+    border-radius:0 10px 10px;
+    padding: 20px 10px 0;
+    width: 90%;
+    margin-left: 10px;
+}
+.item-post .main-content-post .first-item .user-name{
+    font-weight: 500;
+}
+.item-post .main-content-post .first-item .icon-credit{
+    font-size: 20px;
+    color: #52a2f3;
+    margin: 0 5px;
+}
+.item-post .main-content-post .first-item .user-id{
+    color: #aaa;
+}
+.item-post .main-content-post .first-item .time-post{
+    float: right;
+}
+.item-post .main-content-post .first-item .time-post .icon{
+    font-size: 16px;
+    margin: 0 10px;
+    color: #686868;
+}
+.item-post .second-item .comment-tweet{
+    margin: 10px 0;
+}
+.item-post .third-item .list-image-post{
+    display: flex;
+    flex-direction: row;
+
+}
+.item-post .third-item .list-image-post li{
+    width: 350px;
+    padding: 8px;
+}
+.item-post .third-item .list-image-post li img{
+    border-radius: 10px;
+}
+.item-post .fourth-item .list-oparation-post{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+.item-post .fourth-item .list-oparation-post li{
+    border-right: 1px solid rgb(214, 214, 214);
+    padding: 0 10px 10px 0;
+}
+.item-post .fourth-item .list-oparation-post li:last-child{
+    border: 0;
+}
+.item-post .fourth-item .list-oparation-post li i{
+    font-size: 18px;
+    margin-right: 10px;
+    color: #d2d2d2;
+}

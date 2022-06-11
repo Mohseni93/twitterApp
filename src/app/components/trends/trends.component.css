@@ -1,0 +1,27 @@
+/* //////////////////////style trends component///////////////// */
+.box-trends{
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.box-trends .title{
+    border-bottom: 1px solid #d2d2d2;
+    padding: 20px;
+}
+.box-trends .title .icon{
+    float: right;
+    color: #d2d2d2;
+    font-size: 16px;
+}
+.box-trends .content .list-trends li{
+    padding: 10px 20px;
+    border-bottom: 1px solid #eee;
+}
+.box-trends .content .list-trends li .icon{
+    float: right;
+}
+.box-trends .content .list-trends .see-more{
+    display: block;
+    text-align: center;
+    color: #adadad;
+}

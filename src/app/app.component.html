@@ -1,0 +1,42 @@
+<app-header></app-header>
+<main>
+    <div class="main-banner" style="background-image: url('./../assets/image/snowy-mountains.jpg');">
+    </div>
+    <div class="main-content">
+        <div class="row">
+            <div class="col-lg-3">
+                <app-profile></app-profile>
+            </div>
+            <div class="col-lg-6">
+                <div class="content-all-post">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Tweets</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link active" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Tweets & Retweets</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Media</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane" type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false">Links</button>
+                        </li>
+                      </ul>
+                      <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">...</div>
+                        <div class="tab-pane fade show active" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                           <all-post></all-post>
+                        </div>                        
+                        <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">...</div>
+                        <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">...</div>
+                      </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+               <app-trends></app-trends>
+                <app-suggestion-follow></app-suggestion-follow>
+            </div>
+        </div>
+    </div>
+</main>
