@@ -1,0 +1,84 @@
+<div class="item-post" *ngFor="let post of postList">
+    <div class="profile-post">
+        <img [src]="post.imgProfile" [alt]="post.userName" />
+    </div>
+    <div class="main-content-post">
+        <div class="first-item">
+            <span class="user-name">
+                {{post.userName}}
+                <i class="fa fa-check-circle icon-credit"></i>
+            </span>
+            <a class="user-id" href="#">
+                @{{post.userId}}
+            </a>
+            <span class="time-post">
+                <i class="fa fa-clock-o icon"></i>
+                <span>{{post.time}}</span>
+            </span>
+        </div>
+        <div class="second-item">
+            <div class="comment-tweet">
+                <p>{{post.caption}}</p>
+            </div>
+        </div>
+        <div class="third-item">
+            <div class="content-retweet" *ngIf="post.reTweet; else listImage">
+                <div class="main-content-post">
+                    <div class="first-item">
+                        <span class="user-name">
+                            <img src="./../assets/image/profile.png" alt="">
+                            John Ramesry
+                            <i class="fa fa-check-circle icon-credit"></i>
+                        </span>
+                        <a class="user-id" href="#">
+                            @john_res
+                        </a>
+                        <span class="time-post">
+                            <i class="fa fa-clock-o icon"></i>
+                            <span>Hour</span>
+                        </span>
+                    </div>
+                    <div class="second-item">
+                        <div class="comment-tweet">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem pariatur expedita odit similique explicabo necessitatibus ipsam mollitia ex laborum, dolor voluptate, obcaecati repellendus</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ng-template #listImage>
+                <ul class="list-image-post" >
+                    <li *ngFor="let imagePost of post.imgPost">
+                        <img [src]="imagePost" alt="">
+                    </li>
+                </ul>
+            </ng-template>
+        </div>
+        <div class="fourth-item">
+            <ul class="list-oparation-post">
+                <li>
+                    <a href="#">
+                        <i class="fa fa-comment"></i>
+                        <span>{{post.numberComment}}</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-recycle"></i>
+                        <span>{{post.numberForward}}</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-heart"></i>
+                        <span>{{post.numberLike}}</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-share"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

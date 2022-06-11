@@ -1,0 +1,39 @@
+.main-header{
+    padding: 10px;
+    background-color: #fff;
+}
+.left-side-header .list-item-header li{
+    display: inline-block;
+    padding: 10px;
+}
+.user-info{
+    text-align: right;
+    padding: 10px;
+}
+.box-search-header{
+    position: relative;
+    padding: 10px;
+}
+.box-search-header input{
+    width: 100%;
+    border: 0;
+    background-color: #f7f8fa;
+    padding: 10px;
+    padding-left: 50px;
+    border-radius: 5px;
+    color: #aaa;
+    outline: none;
+}
+.box-search-header .icon-search{
+    position: absolute;
+    top: 22px;
+    left: 22px;
+    color: #686868;
+    font-size: 16px;
+}
+.user-info img{
+    margin: 0 5px;
+}
+.left-side-header{
+    padding: 10px;
+}

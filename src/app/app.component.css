@@ -1,0 +1,33 @@
+main{
+    position: relative;
+}
+.main-banner{
+    height: 250px;
+    border-radius: 0 0 30px 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main-content{
+    background-color: transparent;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: absolute;
+    top:76%;
+    right: 0;
+    left: 0;
+}
+/* ////////////////style post ////// */
+.content-all-post{
+    background-color: #fff;
+    padding: 20px 0;
+    border-radius: 10px;
+}
+.content-all-post .nav-link{
+    border-color: transparent;
+    color: #686868;
+}
+.content-all-post .nav-link.active{
+    color: #52a2f3;
+    border-bottom: 1px solid #52a2f3;
+}
